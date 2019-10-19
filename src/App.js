@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.scss';
+
+import './resources/scss/styles.scss';
 
 import FullpageWrapper from './pages/Wrapper';
 
