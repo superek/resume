@@ -1,0 +1,52 @@
+.profile {
+    text-align: center;
+    .keyword {
+        display: inline-block;
+        font-family: 'Open Sans';
+        font-size: 30px;
+        h2 {
+            margin: 0;
+            font-size: 70px;
+            line-height: 1;
+            font-weight: bold;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+
+            }
+        }
+        sup {
+            display: block;
+            text-align: left;
+        }
+        .chance {
+            transform: translateY(-100%);
+            opacity: 0;
+           
+            transition: all 1s .5s linear;
+            .active & {
+                opacity: 1;
+                transform: translateY(0);
+
+            }
+        }
+    }
+    .slogan {
+        p {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 1s 2s linear;
+            .active & {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            &:first-child {
+                font-size: 20px;
+                transition-delay: 1.5s;
+            }
+        }
+
+    }
+}
+

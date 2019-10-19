@@ -5,9 +5,9 @@ import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverf
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import Menu from '../components/Menu';
-import Main from '../components/Main';
-import Projects from '../components/Projects';
-import Profile from '../components/Profile';
+import Main from './Main';
+import Projects from './Projects';
+import Profile from './Profile';
 
 
 class FullpageWrapper extends React.Component {
