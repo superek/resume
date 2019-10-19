@@ -32,7 +32,7 @@
             }
         }
     }
-    .slogan {
+    .description {
         p {
             opacity: 0;
             transform: translateY(-10px);
@@ -42,11 +42,24 @@
                 transform: translateY(0);
             }
             &:first-child {
+                display: inline-block;
                 font-size: 20px;
+                line-height: 1.5;
                 transition-delay: 1.5s;
+                border-bottom: 1px solid #000;
             }
         }
-
+    }
+    .slogan {
+        display: inline-block;
+        font-family: 'Montserrat';
+        margin: 0;
+        &:before {
+            content: '\201C';
+        }
+        &:after {
+            content: '\201D'
+        }
     }
 }
 
